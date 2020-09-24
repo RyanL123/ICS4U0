@@ -80,7 +80,7 @@ console.log(BinarySearch(arr, 100));
 /**
  * This function finds the index of a given element within an array using linear search
  *
- * @param {array} arr - A sorted array of numbers
+ * @param {array} arr - A array of numbers
  * @param {number} target - The target element to be searching for
  * @returns {number} - Index of the element, or -1 if the element doesn't exist
  */
