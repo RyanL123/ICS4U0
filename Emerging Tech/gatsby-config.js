@@ -10,8 +10,13 @@ module.exports = {
                 path: path.join(__dirname, `src`, `images`),
             },
         },
+        {
+            resolve: `gatsby-plugin-chakra-ui`,
+            options: {
+                isResettingCSS: true,
+            },
+        },
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
-        `gatsby-plugin-chakra-ui`,
     ],
 }
