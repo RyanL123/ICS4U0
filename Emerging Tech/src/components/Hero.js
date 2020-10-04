@@ -91,7 +91,7 @@ const Hero = () => {
                     <a
                         href="https://github.com/RyanL123/ICS4U0/tree/master/Emerging%20Tech"
                         target="_blank"
-                        noopener
+                        rel="noreferrer"
                     >
                         <Img fixed={github.childImageSharp.fixed} />
                     </a>
