@@ -2,6 +2,11 @@ import { theme as defaultTheme } from "@chakra-ui/core"
 
 const theme = {
     ...defaultTheme,
+    fonts: {
+        ...defaultTheme.fonts,
+        heading: "Metropolis",
+        body: "Metropolis",
+    },
     colors: {
         ...defaultTheme.colors,
         blue: {
@@ -28,5 +33,19 @@ const theme = {
             800: "#1c2330",
             900: "#050c15",
         },
+        yellow: {
+            50: "#fef4e0",
+            100: "#f0dfbf",
+            200: "#e3ca99",
+            300: "#d7b573",
+            400: "#cca04d",
+            500: "#b28633",
+            600: "#8b6927",
+            700: "#644b1a",
+            800: "#3c2d0b",
+            900: "#190e00",
+        },
     },
 }
+
+export default theme
