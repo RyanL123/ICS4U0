@@ -22,8 +22,8 @@ export default () => (
         <Box px="20px" maxWidth="1000px" width="100%">
             <Break />
             <Heading color="gray.700" size="xl" mb="50px" textAlign="center">
-                The impacts (+ and -) of the emerging technology on societies
-                and cultures around the world
+                The impacts of the emerging technology on societies and cultures
+                around the world
             </Heading>
             <Text
                 color="gray.700"
