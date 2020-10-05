@@ -4,6 +4,7 @@ import Hero from "../components/Hero"
 import Intro from "../components/Intro"
 import Society from "../components/Society"
 import Economy from "../components/Economy"
+import Environment from "../components/Environment"
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Intro />
             <Society />
             <Economy />
+            <Environment />
         </Box>
     )
 }
