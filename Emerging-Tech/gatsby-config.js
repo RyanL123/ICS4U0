@@ -1,7 +1,7 @@
 const path = require(`path`)
 
 module.exports = {
-    pathPrefix: "/ICS4U0",
+    pathPrefix: "/ICS4U0/Emerging-Tech",
     plugins: [
         {
             resolve: `gatsby-source-filesystem`,
