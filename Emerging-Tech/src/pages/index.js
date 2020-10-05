@@ -3,6 +3,7 @@ import { Box } from "@chakra-ui/core"
 import Hero from "../components/Hero"
 import Intro from "../components/Intro"
 import Society from "../components/Society"
+import Economy from "../components/Economy"
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Hero />
             <Intro />
             <Society />
+            <Economy />
         </Box>
     )
 }

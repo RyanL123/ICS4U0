@@ -11,7 +11,7 @@ export default () => (
                 color="gray.700"
                 textAlign="justify"
                 fontSize="lg"
-                fontWeight="300"
+                fontWeight="500"
             >
                 A social credit system is a system that gives a rating to
                 citizens of a country based on various different factors. The

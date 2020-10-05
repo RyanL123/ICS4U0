@@ -71,7 +71,7 @@ const Hero = () => {
                     color="gray.700"
                     textAlign={["left", "left", "center", "center"]}
                     size="sm"
-                    fontWeight="400"
+                    fontWeight="500"
                     width="100%"
                     mt="12px"
                     height="auto"
@@ -85,7 +85,7 @@ const Hero = () => {
                     justifyContent="space-between"
                     mt="50px"
                 >
-                    <Text color="yellow.400" fontWeight="300">
+                    <Text color="yellow.400" fontWeight="500">
                         2020/Oct/3
                     </Text>
                     <a
@@ -95,7 +95,9 @@ const Hero = () => {
                     >
                         <Img fixed={github.childImageSharp.fixed} />
                     </a>
-                    <Text color="yellow.400">By: Ryan Li</Text>
+                    <Text color="yellow.400" fontWeight="500">
+                        By: Ryan Li
+                    </Text>
                 </Box>
             </Box>
         </Wrapper>

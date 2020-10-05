@@ -4,14 +4,14 @@ import Wrapper from "./Wrapper"
 import Break from "./Break"
 
 const Plus = ({ content }) => (
-    <ListItem my="5px">
+    <ListItem my="5px" fontWeight="500">
         <ListIcon icon="check-circle" color="green.600" />
         {content}
     </ListItem>
 )
 
 const Warn = ({ content }) => (
-    <ListItem my="5px">
+    <ListItem my="5px" fontWeight="500">
         <ListIcon icon="warning" color="red.600" />
         {content}
     </ListItem>
@@ -29,7 +29,7 @@ export default () => (
                 color="gray.700"
                 textAlign="justify"
                 fontSize="lg"
-                fontWeight="300"
+                fontWeight="500"
             >
                 While many consider the implementation of the Social Credit
                 System to be only a few steps away from a dystopian society, the
