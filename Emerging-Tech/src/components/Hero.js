@@ -89,7 +89,7 @@ const Hero = () => {
                         2020/Oct/3
                     </Text>
                     <a
-                        href="https://github.com/RyanL123/ICS4U0/tree/master/Emerging%20Tech"
+                        href="https://github.com/RyanL123/ICS4U0/tree/master/Emerging-Tech"
                         target="_blank"
                         rel="noreferrer"
                     >
