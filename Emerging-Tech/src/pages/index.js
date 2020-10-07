@@ -5,6 +5,7 @@ import Intro from "../components/Intro"
 import Society from "../components/Society"
 import Economy from "../components/Economy"
 import Environment from "../components/Environment"
+import Health from "../components/Health"
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Society />
             <Economy />
             <Environment />
+            <Health />
         </Box>
     )
 }

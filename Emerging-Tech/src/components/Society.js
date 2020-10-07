@@ -75,8 +75,7 @@ const Society = () => {
                     place, and nobody will know.”
                 </Quote>
                 <List my="20px" color="gray.700" px="50px">
-                    <Plus content="Encourage participation in society" />
-                    <Plus content="Encourage normal social behavior" />
+                    <Plus content="Encourage participation in society and norma social behavior" />
                     <Plus content="Rewards law-abiding citizens" />
                     <Plus content="Chinese citizens see it as a way to boost public morality and a way to establish trust" />
                 </List>
@@ -84,6 +83,7 @@ const Society = () => {
                     <Warn content="Oppression of free speech" />
                     <Warn content="Loss of individual privacy" />
                     <Warn content="Can easily be manipulated by those in power" />
+                    <Warn content="Rich people can easily raise their credit by making large sums of donations to charities" />
                 </List>
                 <Stat
                     icon={
