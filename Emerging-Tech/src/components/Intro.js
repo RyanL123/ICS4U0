@@ -5,7 +5,11 @@ import Break from "./Break"
 
 export default () => (
     <Wrapper>
-        <Box px="20px" maxWidth="1000px" width="100%">
+        <Box
+            px={["10vw", "10vw", "10vw", "20px"]}
+            maxWidth="1000px"
+            width="100%"
+        >
             <Break />
             <Text
                 color="gray.700"

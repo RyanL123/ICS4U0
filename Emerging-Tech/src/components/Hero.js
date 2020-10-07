@@ -6,9 +6,9 @@ import Img from "gatsby-image"
 import Wrapper from "./Wrapper"
 
 const Hero = () => {
-    const { shanghai_fluid, github } = useStaticQuery(graphql`
+    const { worlds, github } = useStaticQuery(graphql`
         query {
-            shanghai_fluid: file(relativePath: { eq: "shanghai.jpg" }) {
+            worlds: file(relativePath: { eq: "worlds.jpg" }) {
                 childImageSharp {
                     fluid(maxWidth: 2000, maxHeight: 900, quality: 100) {
                         ...GatsbyImageSharpFluid_withWebp
@@ -32,7 +32,7 @@ const Hero = () => {
                 display={["none", "none", "inherit", "inherit"]}
             >
                 <BackgroundImage
-                    fluid={shanghai_fluid.childImageSharp.fluid}
+                    fluid={worlds.childImageSharp.fluid}
                     style={{
                         width: "100%",
                         height: "100%",
@@ -53,12 +53,17 @@ const Hero = () => {
                     borderRadius={[null, null, "12px", "12px"]}
                 >
                     <Img
-                        fluid={shanghai_fluid.childImageSharp.fluid}
+                        fluid={worlds.childImageSharp.fluid}
                         style={{ width: "1000px", height: "100%" }}
                     />
                 </Box>
             </Box>
-            <Box px="20px" py="50px" maxWidth="1000px" width="100%">
+            <Box
+                px={["10vw", "10vw", "10vw", "20px"]}
+                py="50px"
+                maxWidth="1000px"
+                width="100%"
+            >
                 <Heading
                     color="gray.700"
                     textAlign={["left", "left", "center", "center"]}
@@ -84,6 +89,7 @@ const Hero = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     mt="50px"
+                    alignItems="center"
                 >
                     <Text color="yellow.400" fontWeight="500">
                         2020/Oct/3
