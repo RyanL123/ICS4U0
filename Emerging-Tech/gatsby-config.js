@@ -16,6 +16,15 @@ module.exports = {
                 isResettingCSS: true,
             },
         },
+        {
+            resolve: `gatsby-plugin-web-font-loader`,
+            options: {
+                custom: {
+                    families: [`Metropolis`],
+                    urls: [`/fonts/fonts.css`],
+                },
+            },
+        },
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
     ],
