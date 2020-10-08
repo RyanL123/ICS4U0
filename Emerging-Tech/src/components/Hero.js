@@ -51,6 +51,7 @@ const Hero = () => {
                 <Box
                     overflow="hidden"
                     borderRadius={[null, null, "12px", "12px"]}
+                    width="1000px"
                 >
                     <a
                         href="https://www.talkesport.com/news/lol/league-of-legends-worlds-2020-primer-begins-sept-25th-in-china/"
@@ -59,7 +60,9 @@ const Hero = () => {
                     >
                         <Img
                             fluid={worlds.childImageSharp.fluid}
-                            style={{ width: "1000px", height: "100%" }}
+                            style={{
+                                height: "100%",
+                            }}
                         />
                     </a>
                 </Box>
