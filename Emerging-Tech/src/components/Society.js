@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Heading, Text, List, ListItem, ListIcon } from "@chakra-ui/core"
+import { Box, Heading, Text, List } from "@chakra-ui/core"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Wrapper from "./Wrapper"
