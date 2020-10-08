@@ -1,6 +1,6 @@
 import React from "react"
 import { Box, Heading, Text } from "@chakra-ui/core"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import Img from "gatsby-image"
 import Wrapper from "./Wrapper"
@@ -52,10 +52,16 @@ const Hero = () => {
                     overflow="hidden"
                     borderRadius={[null, null, "12px", "12px"]}
                 >
-                    <Img
-                        fluid={worlds.childImageSharp.fluid}
-                        style={{ width: "1000px", height: "100%" }}
-                    />
+                    <a
+                        href="https://www.talkesport.com/news/lol/league-of-legends-worlds-2020-primer-begins-sept-25th-in-china/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Img
+                            fluid={worlds.childImageSharp.fluid}
+                            style={{ width: "1000px", height: "100%" }}
+                        />
+                    </a>
                 </Box>
             </Box>
             <Box
@@ -97,10 +103,28 @@ const Hero = () => {
                     <a
                         href="https://github.com/RyanL123/ICS4U0/tree/master/Emerging-Tech"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <Img fixed={github.childImageSharp.fixed} />
                     </a>
+                    <Link to="/source">
+                        <Box width="40px" height="40px">
+                            <svg
+                                class="w-6 h-6"
+                                fill="none"
+                                stroke="black"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                ></path>
+                            </svg>
+                        </Box>
+                    </Link>
                     <Text color="yellow.400" fontWeight="500">
                         By: Ryan Li
                     </Text>

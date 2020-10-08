@@ -6,20 +6,8 @@ import Wrapper from "./Wrapper"
 import Break from "./Break"
 import Quote from "./Quote"
 import Stat from "./Stat"
-
-const Plus = ({ content }) => (
-    <ListItem my="5px" fontWeight="500">
-        <ListIcon icon="check-circle" color="green.600" />
-        {content}
-    </ListItem>
-)
-
-const Warn = ({ content }) => (
-    <ListItem my="5px" fontWeight="500">
-        <ListIcon icon="warning" color="red.600" />
-        {content}
-    </ListItem>
-)
+import Plus from "./Plus"
+import Warn from "./Warn"
 
 const Society = () => {
     const { social } = useStaticQuery(graphql`
@@ -46,7 +34,13 @@ const Society = () => {
                     cultures around the world
                 </Heading>
                 <Box my="50px" borderRadius="12px" overflow="hidden">
-                    <Img fluid={social.childImageSharp.fluid} />
+                    <a
+                        href="https://media.wired.com/photos/5d3e269e71d02600081d9a00/master/w_2560%2Cc_limit/security_social-credit_859199990.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Img fluid={social.childImageSharp.fluid} />
+                    </a>
                 </Box>
                 <Text
                     color="gray.700"

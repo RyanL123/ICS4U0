@@ -4,20 +4,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Wrapper from "./Wrapper"
 import Break from "./Break"
-
-const Plus = ({ content }) => (
-    <ListItem my="5px" fontWeight="500">
-        <ListIcon icon="check-circle" color="green.600" />
-        {content}
-    </ListItem>
-)
-
-const Warn = ({ content }) => (
-    <ListItem my="5px" fontWeight="500">
-        <ListIcon icon="warning" color="red.600" />
-        {content}
-    </ListItem>
-)
+import Plus from "./Plus"
+import Warn from "./Warn"
 
 const Economy = () => {
     const { economy } = useStaticQuery(graphql`
@@ -49,7 +37,13 @@ const Economy = () => {
                     world economy
                 </Heading>
                 <Box my="50px" borderRadius="12px" overflow="hidden">
-                    <Img fluid={economy.childImageSharp.fluid} />
+                    <a
+                        href="https://www.som.com/projects/china_world_trade_center_3a"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Img fluid={economy.childImageSharp.fluid} />
+                    </a>
                 </Box>
                 <Text
                     color="gray.700"

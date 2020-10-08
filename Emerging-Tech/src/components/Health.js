@@ -5,27 +5,9 @@ import Img from "gatsby-image"
 import Wrapper from "./Wrapper"
 import Break from "./Break"
 import Stat from "./Stat"
-
-const Plus = ({ content }) => (
-    <ListItem my="5px" fontWeight="500">
-        <ListIcon icon="check-circle" color="green.600" />
-        {content}
-    </ListItem>
-)
-
-const Warn = ({ content }) => (
-    <ListItem my="5px" fontWeight="500">
-        <ListIcon icon="warning" color="red.600" />
-        {content}
-    </ListItem>
-)
-
-const Neutral = ({ content }) => (
-    <ListItem my="5px" fontWeight="500">
-        <ListIcon icon="info" color="blue.500" />
-        {content}
-    </ListItem>
-)
+import Plus from "./Plus"
+import Warn from "./Warn"
+import Neutral from "./Neutral"
 
 const Environment = () => {
     const { hospital } = useStaticQuery(graphql`
@@ -56,7 +38,13 @@ const Environment = () => {
                     The impacts of the emerging technology on human health
                 </Heading>
                 <Box my="50px" borderRadius="12px" overflow="hidden">
-                    <Img fluid={hospital.childImageSharp.fluid} />
+                    <a
+                        href="https://www.euronews.com/2020/02/03/china-s-coronavirus-hospital-built-10-days-opens-its-doors-n1128531"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Img fluid={hospital.childImageSharp.fluid} />
+                    </a>
                 </Box>
                 <Text
                     color="gray.700"

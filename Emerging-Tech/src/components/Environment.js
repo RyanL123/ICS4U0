@@ -4,27 +4,9 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Wrapper from "./Wrapper"
 import Break from "./Break"
-
-const Plus = ({ content }) => (
-    <ListItem my="5px" fontWeight="500">
-        <ListIcon icon="check-circle" color="green.600" />
-        {content}
-    </ListItem>
-)
-
-const Warn = ({ content }) => (
-    <ListItem my="5px" fontWeight="500">
-        <ListIcon icon="warning" color="red.600" />
-        {content}
-    </ListItem>
-)
-
-const Neutral = ({ content }) => (
-    <ListItem my="5px" fontWeight="500">
-        <ListIcon icon="info" color="blue.500" />
-        {content}
-    </ListItem>
-)
+import Plus from "./Plus"
+import Warn from "./Warn"
+import Neutral from "./Neutral"
 
 const Environment = () => {
     const { shanghai } = useStaticQuery(graphql`
@@ -55,7 +37,13 @@ const Environment = () => {
                     The impacts of the emerging technology on the environment
                 </Heading>
                 <Box my="50px" borderRadius="12px" overflow="hidden">
-                    <Img fluid={shanghai.childImageSharp.fluid} />
+                    <a
+                        href="https://mocah.org/526437-shanghai.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Img fluid={shanghai.childImageSharp.fluid} />
+                    </a>
                 </Box>
                 <Text
                     color="gray.700"
