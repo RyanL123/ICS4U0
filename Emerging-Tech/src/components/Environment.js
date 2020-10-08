@@ -34,7 +34,7 @@ const Environment = () => {
                     mb="50px"
                     textAlign="center"
                 >
-                    The impacts of the emerging technology on the environment
+                    The impacts on the environment
                 </Heading>
                 <Box my="50px" borderRadius="12px" overflow="hidden">
                     <a

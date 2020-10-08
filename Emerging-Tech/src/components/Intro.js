@@ -24,9 +24,9 @@ export default () => (
                 databases. An algorithm would then be used to generate a social
                 rating based on the data collected on an individual. Those with
                 high social ratings would enjoy many privileges in their
-                everyday life such as discounts when buying a house or the
-                ability to skip different bureaucracies. Conversely, those with
-                low social ratings would be punished by having more
+                everyday life such as obtaining easier loans when buying a house
+                or the ability to skip different bureaucracies. Conversely,
+                those with low social ratings would be punished by having more
                 inconveniences in their life, in contrast to the privileges the
                 former enjoys. This system of rewarding the good and punishing
                 the bad would spark competition among the society, with each

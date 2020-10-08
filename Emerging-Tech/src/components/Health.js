@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Wrapper from "./Wrapper"
 import Break from "./Break"
-import Stat from "./Stat"
 import Plus from "./Plus"
 import Warn from "./Warn"
 import Neutral from "./Neutral"
@@ -35,7 +34,7 @@ const Environment = () => {
                     mb="50px"
                     textAlign="center"
                 >
-                    The impacts of the emerging technology on human health
+                    The impacts on human health
                 </Heading>
                 <Box my="50px" borderRadius="12px" overflow="hidden">
                     <a
@@ -68,27 +67,6 @@ const Environment = () => {
                 <List my="20px" color="gray.700" px="50px">
                     <Neutral content="Spread out benefits and punishments over a wide range of credit values, making changes in social credit less impactful on one’s life" />
                 </List>
-                <Stat
-                    icon={
-                        <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="#1654a0"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                        </svg>
-                    }
-                    text="A 2016 WHO report stated that China's suicide rate is 9.7 out of
-                100,000 people, placing it among the countries with the lowest
-                suicide rates in the world"
-                ></Stat>
             </Box>
         </Wrapper>
     )

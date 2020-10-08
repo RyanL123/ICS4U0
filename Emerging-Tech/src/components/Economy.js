@@ -33,8 +33,7 @@ const Economy = () => {
                     mb="50px"
                     textAlign="center"
                 >
-                    The impacts of the emerging technology on the local and
-                    world economy
+                    The impacts on the local and world economy
                 </Heading>
                 <Box my="50px" borderRadius="12px" overflow="hidden">
                     <a

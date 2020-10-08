@@ -30,8 +30,7 @@ const Society = () => {
             >
                 <Break />
                 <Heading color="gray.700" size="xl" textAlign="center">
-                    The impacts of the emerging technology on societies and
-                    cultures around the world
+                    The impacts on societies and cultures around the world
                 </Heading>
                 <Box my="50px" borderRadius="12px" overflow="hidden">
                     <a
