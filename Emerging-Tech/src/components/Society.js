@@ -67,10 +67,20 @@ const Society = () => {
                     something wrong happens, they can just move to a different
                     place, and nobody will know.”
                 </Quote>
+                <Text
+                    color="gray.700"
+                    textAlign="justify"
+                    fontSize="lg"
+                    fontWeight="500"
+                >
+                    With a social credit system, one can be sure of the
+                    integrity and honesty of the person they're hiring without
+                    worrying about the validity of their claims.
+                </Text>
                 <List my="20px" color="gray.700" px="50px">
                     <Plus content="Encourage participation in society and norma social behavior" />
                     <Plus content="Rewards law-abiding citizens" />
-                    <Plus content="Chinese citizens see it as a way to boost public morality and a way to establish trust" />
+                    <Plus content="Boost public moral and establish trust" />
                 </List>
                 <List my="20px" color="gray.700" px="50px">
                     <Warn content="Oppression of free speech" />
