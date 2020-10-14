@@ -6,6 +6,14 @@ const BaseStats = require("./basestats");
  * @class
  */
 class Champion extends BaseStats {
+    /**
+     * @constructor
+     * @param {string} name - Name of the champion
+     * @param {string} type - Type of the champion (mage, assassin, fighter, etc)
+     * @param {number} level - Level of the champion (between 1-18 inclusive)
+     * @param {array} items - Items the champion currently has
+     * @param {number} gold - Amount of gold the champion has
+     */
     constructor(
         attackDamage,
         abilityPower,
@@ -80,6 +88,24 @@ class Champion extends BaseStats {
         this.gold -= item.cost;
         console.log(this.name + " purchased " + item.name);
         return true;
+    }
+    /**
+     * Prints out the statistics for this champion instance
+     */
+    listStats() {
+        console.log("\n================================");
+        console.log(`Name: ${this.name}`);
+        console.log(`Type: ${this.type}`);
+        console.log(`Level: ${this.level}`);
+        console.log(`Gold: ${this.gold}`);
+        console.log(`Attack Damage: ${this.attackDamage}`);
+        console.log(`Ability Power: ${this.abilityPower}`);
+        console.log(`Critical Strike Chance: ${this.critChance * 100}%`);
+        console.log(`Armor: ${this.armor}`);
+        console.log(`Magic Resist: ${this.magicResist}`);
+        console.log(`Health: ${this.health}`);
+        console.log(`Life Steal: ${this.lifeSteal * 100}%`);
+        console.log("================================\n");
     }
 }
 

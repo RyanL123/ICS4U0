@@ -6,7 +6,7 @@
  */
 class BaseStats {
     /**
-     *
+     * @constructor
      * @param {number} attackDamage
      * @param {number} abilityPower
      * @param {number} critChance
@@ -42,6 +42,9 @@ class BaseStats {
     }
     attack() {
         throw new TypeError("You must implement the abstract method attack");
+    }
+    listStats() {
+        throw new TypeError("You must implement the abstract method listStats");
     }
 }
 
