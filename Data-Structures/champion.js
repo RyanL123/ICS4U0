@@ -78,6 +78,7 @@ class Champion extends BaseStats {
         this.armor += item.armor;
         this.magicResist += item.magicResist;
         this.gold -= item.cost;
+        console.log(this.name + " purchased " + item.name);
         return true;
     }
 }

@@ -4,7 +4,7 @@ const Item = require("./item");
 const Yasuo = new Champion(
     114,
     0,
-    0.5,
+    0,
     88,
     53,
     2000,
@@ -43,7 +43,32 @@ const RabadonsDeathcap = new Item(
     3600
 );
 
-console.log(Math.round(Yasuo.attack(Syndra, "AD")));
-console.log(Math.round(Syndra.attack(Yasuo, "AP")));
+console.log(
+    "Yasuo auto attacked Syndra for " +
+        Math.round(Yasuo.attack(Syndra, "AD")) +
+        " damage"
+);
+console.log(
+    "Syndra used Dark Sphere and dealt " +
+        Math.round(Syndra.attack(Yasuo, "AP")) +
+        " damage to Yasuo"
+);
+console.log(
+    "Now lets give Yasuo an item and have him auto attack Syndra again"
+);
 Yasuo.purchaseItem(InfinityEdge);
-console.log(Math.round(Yasuo.attack(Syndra, "AD")));
+console.log(
+    "Yasuo auto attacked Syndra for " +
+        Math.round(Yasuo.attack(Syndra, "AD")) +
+        " damage"
+);
+console.log(
+    "Since infinity edge can critically strike 25% of the time, lets use it a few more times and see what happens"
+);
+for (let i = 0; i < 4; i++) {
+    console.log(
+        "Yasuo auto attacked Syndra for " +
+            Math.round(Yasuo.attack(Syndra, "AD")) +
+            " damage"
+    );
+}

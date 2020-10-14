@@ -1,4 +1,4 @@
-const ItemStats = require("./basestats");
+const ItemStats = require("./itemstats");
 
 class Item extends ItemStats {
     constructor(
