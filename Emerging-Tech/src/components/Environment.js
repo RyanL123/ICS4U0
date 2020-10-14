@@ -65,7 +65,7 @@ const Environment = () => {
                     <Warn content="Massive amounts of data processing require more computing power thus requiring an abnormal amount of electricity" />
                 </List>
                 <List my="20px" color="gray.700" px="50px">
-                    <Neutral content="Influences and controls people’s spending habits resulting in less money spent on things such as alcohol, weapons, etc." />
+                    <Neutral content="Can be provided through the use of green energy (solar panels, wind turbines, etc)" />
                 </List>
             </Box>
         </Wrapper>
