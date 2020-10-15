@@ -41,6 +41,11 @@ class BaseStats {
                 "You must implement the abstract method attack"
             );
         }
+        if (this.listStats === BaseStats.prototype.Stats) {
+            throw new TypeError(
+                "You must implement the abstract method listStats"
+            );
+        }
     }
     attack() {
         throw new TypeError("You must implement the abstract method attack");
