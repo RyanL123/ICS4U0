@@ -1,0 +1,52 @@
+{
+    "interactions": [
+        {
+            "attacker": "Yasuo",
+            "target": "Syndra",
+            "damage": 62.295081967213115
+        },
+        { "attacker": "Syndra", "target": "Yasuo", "damage": 130.718954248366 },
+        { "champion": "Syndra", "item": "Rabadon's Deathcap", "success": true },
+        {
+            "attacker": "Syndra",
+            "target": "Yasuo",
+            "damage": 209.15032679738562
+        },
+        { "champion": "Yasuo", "item": "Infinity Edge", "success": true },
+        {
+            "attacker": "Yasuo",
+            "target": "Syndra",
+            "damage": 106.01092896174863
+        },
+        {
+            "attacker": "Yasuo",
+            "target": "Syndra",
+            "damage": 212.02185792349727
+        },
+        {
+            "attacker": "Yasuo",
+            "target": "Syndra",
+            "damage": 212.02185792349727
+        },
+        {
+            "attacker": "Yasuo",
+            "target": "Syndra",
+            "damage": 212.02185792349727
+        },
+        {
+            "attacker": "Yasuo",
+            "target": "Syndra",
+            "damage": 212.02185792349727
+        },
+        {
+            "attacker": "Yasuo",
+            "target": "Syndra",
+            "damage": 212.02185792349727
+        },
+        {
+            "attacker": "Yasuo",
+            "target": "Syndra",
+            "damage": 106.01092896174863
+        }
+    ]
+}

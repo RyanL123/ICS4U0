@@ -1,6 +1,23 @@
 const BaseStats = require("./basestats");
 
+/**
+ * This class represents the item statistics
+ *
+ * @class
+ */
 class ItemStats extends BaseStats {
+    /**
+     * Constructor for ItemStats
+     *
+     * @constructor
+     * @param {number} attackDamage - Attack damage value
+     * @param {number} abilityPower - Ability power value
+     * @param {number} critChance - Critical strike chance value
+     * @param {number} armor - Armor value
+     * @param {number} magicResist - Magic Resist value
+     * @param {number} health - Health value
+     * @param {number} lifeSteal - Life steal value
+     */
     constructor(
         attackDamage,
         abilityPower,

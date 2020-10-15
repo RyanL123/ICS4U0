@@ -6,14 +6,16 @@
  */
 class BaseStats {
     /**
+     * Constructor for BaseStats
+     *
      * @constructor
-     * @param {number} attackDamage
-     * @param {number} abilityPower
-     * @param {number} critChance
-     * @param {number} armor
-     * @param {number} magicResist
-     * @param {number} health
-     * @param {number} lifeSteal
+     * @param {number} attackDamage - Attack damage value
+     * @param {number} abilityPower - Ability power value
+     * @param {number} critChance - Critical strike chance value
+     * @param {number} armor - Armor value
+     * @param {number} magicResist - Magic Resist value
+     * @param {number} health - Health value
+     * @param {number} lifeSteal - Life steal value
      */
     constructor(
         attackDamage,

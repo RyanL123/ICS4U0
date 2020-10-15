@@ -7,10 +7,17 @@ const BaseStats = require("./basestats");
  */
 class Champion extends BaseStats {
     /**
+     * Constructor for Champion
+     *
      * @constructor
+     * @param {number} attackDamage - Attack damage value
+     * @param {number} abilityPower - Ability power value
+     * @param {number} critChance - Critical strike chance value
+     * @param {number} armor - Armor value
+     * @param {number} magicResist - Magic Resist value
+     * @param {number} health - Health value
+     * @param {number} lifeSteal - Life steal value
      * @param {string} name - Name of the champion
-     * @param {string} type - Type of the champion (mage, assassin, fighter, etc)
-     * @param {number} level - Level of the champion (between 1-18 inclusive)
      * @param {array} items - Items the champion currently has
      * @param {number} gold - Amount of gold the champion has
      */
@@ -23,8 +30,6 @@ class Champion extends BaseStats {
         health,
         lifeSteal,
         name,
-        type,
-        level,
         items,
         gold
     ) {
@@ -38,8 +43,6 @@ class Champion extends BaseStats {
             lifeSteal
         );
         this.name = name;
-        this.type = type;
-        this.level = level;
         this.items = items;
         this.gold = gold;
     }
@@ -55,7 +58,12 @@ class Champion extends BaseStats {
      * @returns {number} - The post-mitigation damage after taking into account the target's resistances
      */
     attack(target, type) {
-        if (this.health <= 0) return 0.0;
+        let log = {
+            attacker: this.name,
+            target: target.name,
+            damage: 0,
+        };
+        if (this.health <= 0) return log;
         if (type == "AD") {
             // Use RNG to determine if the attack is a critical strike
             // For a critical strike chance of 15%, a number between 1-15 (inclusive) must be generated
@@ -63,12 +71,13 @@ class Champion extends BaseStats {
             let crit =
                 Math.floor(Math.random() * 101) + 1 <= 100 * this.critChance;
             let multiplier = crit ? 2 : 1;
-            return (
-                (this.attackDamage * 100 * multiplier) / (100 + target.armor)
-            );
+            log.damage =
+                (this.attackDamage * 100 * multiplier) / (100 + target.armor);
+            return log;
         } else if (type == "AP") {
-            return (this.abilityPower * 100) / (100 + target.magicResist);
-        } else return 0.0;
+            log.damage = (this.abilityPower * 100) / (100 + target.magicResist);
+            return log;
+        } else return log;
     }
     /**
      * Purchases a item. The item statistics are then added to the champion, making it stronger
@@ -78,7 +87,12 @@ class Champion extends BaseStats {
      * @returns {bool} - Whether the purchase was successful or not
      */
     purchaseItem(item) {
-        if (item.cost > this.gold) return false;
+        let log = {
+            champion: this.name,
+            item: item.name,
+            success: false,
+        };
+        if (item.cost > this.gold) return log;
         this.items.push(item);
         this.attackDamage += item.attackDamage;
         this.abilityPower += item.abilityPower;
@@ -87,7 +101,8 @@ class Champion extends BaseStats {
         this.magicResist += item.magicResist;
         this.gold -= item.cost;
         console.log(this.name + " purchased " + item.name);
-        return true;
+        log.success = true;
+        return log;
     }
     /**
      * Prints out the statistics for this champion instance
@@ -95,8 +110,6 @@ class Champion extends BaseStats {
     listStats() {
         console.log("\n================================");
         console.log(`Name: ${this.name}`);
-        console.log(`Type: ${this.type}`);
-        console.log(`Level: ${this.level}`);
         console.log(`Gold: ${this.gold}`);
         console.log(`Attack Damage: ${this.attackDamage}`);
         console.log(`Ability Power: ${this.abilityPower}`);

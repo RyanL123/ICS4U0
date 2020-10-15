@@ -1,0 +1,24 @@
+{
+    "Infinity Edge": {
+        "name": "Infinity Edge",
+        "attackDamage": 80,
+        "abilityPower": 0,
+        "critChance": 0.5,
+        "armor": 0,
+        "magicResist": 0,
+        "health": 0,
+        "lifeSteal": 0,
+        "cost": 3400
+    },
+    "Rabadon's Deathcap": {
+        "name": "Rabadon's Deathcap",
+        "attackDamage": 80,
+        "abilityPower": 120,
+        "critChance": 0,
+        "armor": 0,
+        "magicResist": 0,
+        "health": 0,
+        "lifeSteal": 0,
+        "cost": 3600
+    }
+}
