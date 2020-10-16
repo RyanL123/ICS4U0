@@ -12,7 +12,7 @@
     },
     "Rabadon's Deathcap": {
         "name": "Rabadon's Deathcap",
-        "attackDamage": 80,
+        "attackDamage": 0,
         "abilityPower": 120,
         "critChance": 0,
         "armor": 0,
