@@ -7,7 +7,6 @@
         "armor": 0,
         "magicResist": 0,
         "health": 0,
-        "lifeSteal": 0,
         "cost": 3400
     },
     "Rabadon's Deathcap": {
@@ -18,7 +17,6 @@
         "armor": 0,
         "magicResist": 0,
         "health": 0,
-        "lifeSteal": 0,
         "cost": 3600
     }
 }

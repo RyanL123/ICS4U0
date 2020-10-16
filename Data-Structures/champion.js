@@ -97,7 +97,7 @@ class Champion extends BaseStats {
         this.armor += item.armor;
         this.magicResist += item.magicResist;
         this.gold -= item.cost;
-        console.log(this.name + " purchased " + item.name);
+        console.log(`${this.name} purchased ${item.name}`);
         log.success = true;
         return log;
     }
@@ -114,7 +114,6 @@ class Champion extends BaseStats {
         console.log(`Armor: ${this.armor}`);
         console.log(`Magic Resist: ${this.magicResist}`);
         console.log(`Health: ${this.health}`);
-        console.log(`Life Steal: ${this.lifeSteal * 100}%`);
         console.log("================================\n");
     }
     /**
