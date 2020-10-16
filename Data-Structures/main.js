@@ -5,8 +5,8 @@ const fs = require("fs");
 let logs = { interactions: [] };
 
 // Create champions with stats
-const Yasuo = new Champion(114, 0, 0, 88, 53, 2000, 0.15, "Yasuo", [], 4000);
-const Syndra = new Champion(103, 200, 0, 83, 39, 2050, 0, "Syndra", [], 3600);
+const Yasuo = new Champion(114, 0, 0.15, 88, 53, 2000, "Yasuo", [], 4000);
+const Syndra = new Champion(103, 200, 0, 83, 39, 2050, "Syndra", [], 3600);
 
 // Demonstration of champion and item interactions
 // -----------------------------------------------
@@ -36,6 +36,7 @@ Syndra.listStats();
 action = Syndra.purchaseItem(Items["Rabadon's Deathcap"]);
 logs.interactions.push(action);
 Syndra.listStats();
+Syndra.listItems();
 console.log(
     "We can see Syndra's ability power increased by 120. Lets see how much more damage she deals"
 );
