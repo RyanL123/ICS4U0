@@ -16,6 +16,21 @@
         {
             "attacker": "Yasuo",
             "target": "Syndra",
+            "damage": 212.02185792349727
+        },
+        {
+            "attacker": "Yasuo",
+            "target": "Syndra",
+            "damage": 106.01092896174863
+        },
+        {
+            "attacker": "Yasuo",
+            "target": "Syndra",
+            "damage": 106.01092896174863
+        },
+        {
+            "attacker": "Yasuo",
+            "target": "Syndra",
             "damage": 106.01092896174863
         },
         {
@@ -26,27 +41,12 @@
         {
             "attacker": "Yasuo",
             "target": "Syndra",
-            "damage": 212.02185792349727
-        },
-        {
-            "attacker": "Yasuo",
-            "target": "Syndra",
-            "damage": 212.02185792349727
-        },
-        {
-            "attacker": "Yasuo",
-            "target": "Syndra",
-            "damage": 212.02185792349727
-        },
-        {
-            "attacker": "Yasuo",
-            "target": "Syndra",
-            "damage": 212.02185792349727
-        },
-        {
-            "attacker": "Yasuo",
-            "target": "Syndra",
             "damage": 106.01092896174863
+        },
+        {
+            "attacker": "Yasuo",
+            "target": "Syndra",
+            "damage": 212.02185792349727
         }
     ]
 }

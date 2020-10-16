@@ -55,6 +55,7 @@ console.log(
     "Now lets give Yasuo an item and have him auto attack Syndra again"
 );
 action = Yasuo.purchaseItem(Items["Infinity Edge"]);
+Yasuo.listItems();
 logs.interactions.push(action);
 
 // Yasuo auto attacks Syndra, dealing increased damage from having more attack damage,
