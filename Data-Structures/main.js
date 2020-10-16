@@ -18,16 +18,16 @@ let action = Yasuo.attack(Syndra, "AD");
 // Yasuo auto attacks Syndra
 logs.interactions.push(action);
 console.log(
-    "Yasuo auto attacked Syndra for " + Math.round(action.damage) + " damage"
+    `Yasuo auto attacked Syndra for ${Math.round(action.damage)} damage`
 );
 
 // Syndra attacks back with her ability
 action = Syndra.attack(Yasuo, "AP");
 logs.interactions.push(action);
 console.log(
-    "Syndra used Dark Sphere and dealt " +
-        Math.round(action.damage) +
-        " damage to Yasuo"
+    `Syndra used Dark Sphere and dealt ${Math.round(
+        action.damage
+    )} damage to Yasuo`
 );
 console.log("Let's give Syndra an item and see the damage difference");
 
@@ -46,9 +46,9 @@ console.log(
 action = Syndra.attack(Yasuo, "AP");
 logs.interactions.push(action);
 console.log(
-    "Syndra used Dark Sphere and dealt " +
-        Math.round(action.damage) +
-        " damage to Yasuo"
+    `Syndra used Dark Sphere and dealt ${Math.round(
+        action.damage
+    )} damage to Yasuo`
 );
 
 // Yasuo purchases infinity edge, gaining the ability to critically strike his targets
@@ -64,7 +64,7 @@ logs.interactions.push(action);
 action = Yasuo.attack(Syndra, "AD");
 logs.interactions.push(action);
 console.log(
-    "Yasuo auto attacked Syndra for " + Math.round(action.damage) + " damage"
+    `Yasuo auto attacked Syndra for ${Math.round(action.damage)} damage`
 );
 
 // Loop 6 times to show critical strike chance affecting damage. It is possible no attacks will
@@ -76,9 +76,7 @@ for (let i = 0; i < 6; i++) {
     action = Yasuo.attack(Syndra, "AD");
     logs.interactions.push(action);
     console.log(
-        "Yasuo auto attacked Syndra for " +
-            Math.round(action.damage) +
-            " damage"
+        `Yasuo auto attacked Syndra for ${Math.round(action.damage)} damage`
     );
 }
 
