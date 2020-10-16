@@ -41,12 +41,6 @@ class Item extends BaseStats {
         this.cost = cost;
     }
     /**
-     * Items cannot attack by themselves
-     */
-    attack() {
-        return null;
-    }
-    /**
      * Prints out the statistics for this item instance
      */
     listStats() {
