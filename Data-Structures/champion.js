@@ -45,9 +45,8 @@ class Champion extends BaseStats {
     }
     /**
      * Calculates the damage if one entity were to attack another entity. Must specify the
-     * appropriate attack type for damage calculations. Ability power cannot critically strike ,
-     * while basic attacks calculated with the Attack Damage stat can critically strike for
-     * double the damage. The same amount of damage is subtracted from the target's health
+     * appropriate attack type for damage calculations. The same amount of damage is subtracted
+     * from the target's health
      *
      *
      * @param {BaseStats} target - Target being attacked
@@ -91,12 +90,12 @@ class Champion extends BaseStats {
         };
         if (item.cost > this.gold) return log;
         this.items.push(item);
-        this.attackDamage += item.attackDamage;
-        this.abilityPower += item.abilityPower;
-        this.critChance += item.critChance;
-        this.armor += item.armor;
-        this.magicResist += item.magicResist;
-        this.gold -= item.cost;
+        this.attackDamage += parseInt(item.attackDamage);
+        this.abilityPower += parseInt(item.abilityPower);
+        this.critChance += parseInt(item.critChance);
+        this.armor += parseInt(item.armor);
+        this.magicResist += parseInt(item.magicResist);
+        this.gold -= parseInt(item.cost);
         console.log(`${this.name} purchased ${item.name}`);
         log.success = true;
         return log;
