@@ -33,19 +33,11 @@ class BaseStats {
         if (new.target === BaseStats) {
             throw new TypeError("Can't directly instantiate an Abstract Class");
         }
-        if (this.attack === BaseStats.prototype.attack) {
-            throw new TypeError(
-                "You must implement the abstract method attack"
-            );
-        }
         if (this.listStats === BaseStats.prototype.Stats) {
             throw new TypeError(
                 "You must implement the abstract method listStats"
             );
         }
-    }
-    attack() {
-        throw new TypeError("You must implement the abstract method attack");
     }
     listStats() {
         throw new TypeError("You must implement the abstract method listStats");
