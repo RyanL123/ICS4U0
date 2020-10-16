@@ -16,7 +16,6 @@ class Champion extends BaseStats {
      * @param {number} armor - Armor value
      * @param {number} magicResist - Magic Resist value
      * @param {number} health - Health value
-     * @param {number} lifeSteal - Life steal value
      * @param {string} name - Name of the champion
      * @param {array} items - Items the champion currently has
      * @param {number} gold - Amount of gold the champion has
@@ -28,7 +27,6 @@ class Champion extends BaseStats {
         armor,
         magicResist,
         health,
-        lifeSteal,
         name,
         items,
         gold
@@ -39,8 +37,7 @@ class Champion extends BaseStats {
             critChance,
             armor,
             magicResist,
-            health,
-            lifeSteal
+            health
         );
         this.name = name;
         this.items = items;
@@ -119,6 +116,15 @@ class Champion extends BaseStats {
         console.log(`Health: ${this.health}`);
         console.log(`Life Steal: ${this.lifeSteal * 100}%`);
         console.log("================================\n");
+    }
+    /**
+     * List out all the items the champion currently has
+     */
+    listItems() {
+        console.log(`${this.name}'s items: `);
+        for (let i = 0; i < this.items.length; i++) {
+            console.log(this.items[i]);
+        }
     }
 }
 

@@ -16,7 +16,6 @@ class ItemStats extends BaseStats {
      * @param {number} armor - Armor value
      * @param {number} magicResist - Magic Resist value
      * @param {number} health - Health value
-     * @param {number} lifeSteal - Life steal value
      */
     constructor(
         attackDamage,
@@ -24,8 +23,7 @@ class ItemStats extends BaseStats {
         critChance,
         armor,
         magicResist,
-        health,
-        lifeSteal
+        health
     ) {
         super(
             attackDamage,
@@ -33,8 +31,7 @@ class ItemStats extends BaseStats {
             critChance,
             armor,
             magicResist,
-            health,
-            lifeSteal
+            health
         );
     }
     /**

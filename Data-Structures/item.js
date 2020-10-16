@@ -16,7 +16,6 @@ class Item extends ItemStats {
      * @param {number} armor - Armor value
      * @param {number} magicResist - Magic Resist value
      * @param {number} health - Health value
-     * @param {number} lifeSteal - Life steal value
      * @param {string} name - Name of the item
      * @param {number} cost - Amount of gold the item costs
      */
@@ -27,7 +26,6 @@ class Item extends ItemStats {
         armor,
         magicResist,
         health,
-        lifeSteal,
         name,
         cost
     ) {
@@ -37,8 +35,7 @@ class Item extends ItemStats {
             critChance,
             armor,
             magicResist,
-            health,
-            lifeSteal
+            health
         );
         this.name = name;
         this.cost = cost;

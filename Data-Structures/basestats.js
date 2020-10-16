@@ -15,7 +15,6 @@ class BaseStats {
      * @param {number} armor - Armor value
      * @param {number} magicResist - Magic Resist value
      * @param {number} health - Health value
-     * @param {number} lifeSteal - Life steal value
      */
     constructor(
         attackDamage,
@@ -23,8 +22,7 @@ class BaseStats {
         critChance,
         armor,
         magicResist,
-        health,
-        lifeSteal
+        health
     ) {
         this.attackDamage = attackDamage;
         this.abilityPower = abilityPower;
@@ -32,7 +30,6 @@ class BaseStats {
         this.armor = armor;
         this.magicResist = magicResist;
         this.health = health;
-        this.lifeSteal = lifeSteal;
         if (new.target === BaseStats) {
             throw new TypeError("Can't directly instantiate an Abstract Class");
         }
