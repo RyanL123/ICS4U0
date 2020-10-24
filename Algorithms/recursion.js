@@ -48,4 +48,4 @@ function palindromeIterative(str) {
     return ret;
 }
 
-console.log(palindromeIterative("kayAk"));
+console.log(palindromeIterative("kayak"));
