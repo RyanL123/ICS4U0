@@ -17,6 +17,7 @@ function digitSumIterative(num) {
 console.log(digitSumIterative(126));
 
 function palindromeRecursive(str) {
+    str = str.toLowerCase();
     if (str.length <= 1) return 0;
     flag = true;
     for (let i = 0; i <= Math.floor(str.length) / 2; i++) {
@@ -33,6 +34,7 @@ function palindromeRecursive(str) {
 console.log(palindromeRecursive("kayak"));
 
 function palindromeIterative(str) {
+    str = str.toLowerCase();
     let ret = 0;
     for (let i = 0; i < str.length; i++) {
         for (let j = i + 1; j < str.length; j++) {
@@ -46,4 +48,4 @@ function palindromeIterative(str) {
     return ret;
 }
 
-console.log(palindromeIterative("kayak"));
+console.log(palindromeIterative("kayAk"));
