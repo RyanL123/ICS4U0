@@ -1,12 +1,26 @@
 # [ICS4U0 Algorithms](https://github.com/johnfraserss/ICS4U/wiki/Algorithms)
 
+_Every test was done using the numbers.json file with file size 2.8mb_
+
 ### Time complexity analysis (sorting)
 
 **Bubble Sort:** O(n<sup>2</sup>)
 
+416,679ms
+
 **Insertion Sort:** O(n<sup>2</sup>)
 
+107,612ms
+
 **.sort():** O(nlogn)
+
+347.74ms over 100 trials
+
+### Analysis
+
+**Q: Complete a computational complexity analysis of each of your own sorting algorithms and also compare it to the built-in .sort() function (figure out which one runs faster, why, when, etc.).**
+
+A: Insertion sort appears to be 4 times faster than bubble sort. This 4x time increase is not evident in the time complexity, as n/4 is considered equal to n in terms of big O notation. Javascript's built in .sort function, however, is over 50 times faster than insertion sort, and 200 times faster than bubble sort. This is due to the .sort function being nlogn in time complexity, compared to the n<sup>2</sup> worst case for insertion and bubble sort.
 
 **Q: What do you notice about the searches that have the thin bars vs. those with the thicker bars?**
 
@@ -26,4 +40,14 @@ Some arrays could already be partially in order at the start of the search, whil
 
 **Linear search:** O(n)
 
+2.40ms over 1000 trials
+
 **Sorting + Binary search:** O(nlogn + logn)
+
+248.74ms over 100 trials
+
+### Analysis
+
+**Q: Complete a computational complexity analysis of each of the searching algorithms. One part of this analysis should include a comparison between using linear search and using binary search + .sort().**
+
+In general, linear search should be faster than sorting + binary searching. This is due to linear search being O(n), while sorting then binary searching is O(nlogn + logn), simplified to O(logn\*(n+1)). As we can see, sorting + binary searching has an extra logn factor, which is strictly increasing. For very small values of n, sorting + binary searching may be faster than linear searching.
