@@ -39,7 +39,7 @@ function palindromeIterative(str) {
     for (let i = 0; i < str.length; i++) {
         for (let j = i + 1; j < str.length; j++) {
             flag = true;
-            for (let k = 0; k <= Math.floor((i + j) / 2); k++) {
+            for (let k = 0; k <= Math.floor((j - i) / 2); k++) {
                 flag &= str[i + k] === str[j - k];
             }
             ret += flag;
