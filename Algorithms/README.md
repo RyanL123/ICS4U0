@@ -49,3 +49,15 @@ Average of 248.74ms over 100 trials
 **Q: Complete a computational complexity analysis of each of the searching algorithms. One part of this analysis should include a comparison between using linear search and using binary search + .sort().**
 
 In general, linear search should be faster than sorting + binary searching. This is due to linear search being O(n), while sorting then binary searching is O(nlogn + logn), simplified to O(logn\*(n+1)). As we can see, sorting + binary searching has an extra logn factor, which is strictly increasing. For very small values of n, sorting + binary searching may be faster than linear searching.
+
+# Recursion
+
+### Analysis
+
+**Q: What are some common pitfalls of recursion?**
+
+A: Not having a base/exit case or calling the recursive function again without changing the parameter can cause the function to recurse infinitely.
+
+**Q: What issues did you run into during your development of the below algorithms?**
+
+A: Defining sub-problems that can be combined into the original answer for the recursive palindrome function.
