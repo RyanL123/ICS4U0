@@ -6,15 +6,15 @@ _Every test was done using the numbers.json file with file size 2.8mb_
 
 **Bubble Sort:** O(n<sup>2</sup>)
 
-416,679ms
+416,679ms in 1 trial
 
 **Insertion Sort:** O(n<sup>2</sup>)
 
-107,612ms
+107,612ms in 1 trial
 
 **.sort():** O(nlogn)
 
-347.74ms over 100 trials
+Average of 347.74ms over 100 trials
 
 ### Analysis
 
@@ -40,11 +40,11 @@ Some arrays could already be partially in order at the start of the search, whil
 
 **Linear search:** O(n)
 
-2.40ms over 1000 trials
+Average of 2.40ms over 1000 trials
 
 **Sorting + Binary search:** O(nlogn + logn)
 
-248.74ms over 100 trials
+Average of 248.74ms over 100 trials
 
 ### Analysis
 
