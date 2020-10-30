@@ -28,9 +28,7 @@ The slower algorithms such as bubble sort and insertion sort have thicker bars, 
 
 **Q: Why would someone make this video?**
 
-Run the sorting algorithm on an array of numbers, with the numbers representing the height of the
-bars. Then, on every pass of the algorithm, scan the whole array left to right, playing a sound for
-every number, with greater numbers having a higher pitch and vise versa
+To show the difference in speed between different sorting algorithms and to better visualize the underlying logic in each of the algorithms.
 
 **Q: How could this video be skewed to show something that is incorrect?**
 
